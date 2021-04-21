@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=100%, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.styles.css">
+  <title>Contato</title>
+</head>
+<body>
+  <section class="section">
+    <h1>Entre em contato</h1>
+
+    <form action="" id='form-contato' method="post">
+      <div>
+        <label for="name">Nome</label>
+        <input id='name' type="text" placeholder="Seu nome" required name='name'/>
+      </div>
+      <div>
+        <label for="fone">Telefone</label>
+        <input id='fone' type="text" placeholder="(XX) XXXX-XXXX" required name='fone'/>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input id='email' type="email" placeholder="seu@email.com" required name='email'/>
+      </div>
+      <div>
+        <label for="motivo">Motivo do contato</label>
+        <input id='motivo' list="lista-motivo" type="text" placeholder="Contato para trabalho..." name='motivo'/>
+        <datalist id='lista-motivo' >
+          <option value="Contato para trabalho"></option>
+          <option value="Oferta"></option>
+          <option value="Propaganda"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="comentarios">Comentários gerais</label>
+        <textarea id='comentarios' type="email" placeholder="" name='comentarios'></textarea>
+      </div>
+
+      <footer>
+        <a href="./index.html">Voltar</a>
+        <button type="submit">Enviar</button>
+      </footer>
+    </form>
+  </section>
+</body>
+</html>

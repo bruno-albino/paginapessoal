@@ -1,0 +1,53 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  background-color: aliceblue;
+  box-shadow: 0px 0px 3px -1px;
+
+  padding: 10px;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+
+#form-contato input, #form-contato textarea {
+  font-size: 20px;
+}
+
+#form-contato input {
+  height: 35px;
+}
+#form-contato > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 10px;
+  max-width: 600px;
+  align-items: center;
+}
+
+#form-contato button[type='submit']{
+  width: 150px;
+  margin: 10px 5px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+#form-contato footer {
+  width: 100%;
+  padding: 10px;
+}
+
+#form-contato button[type='submit']:hover{
+  background-color: rgb(0, 99, 0);
+  cursor: pointer;
+}
